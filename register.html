@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запис на навчання | EnglishSchool</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+
+    .form-card {
+        background: #ffffff;
+        padding: 3rem 2.5rem;
+        border-radius: 24px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        max-width: 480px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-card h2 {
+        color: #2c3e50;
+        margin-bottom: 0.8rem;
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+
+    .form-card p {
+        color: #666666;
+        margin-bottom: 2rem;
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .form-group {
+        text-align: left;
+        margin-bottom: 1.4rem;
+        width: 100%;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #2c3e50;
+        font-weight: 600;
+        font-size: 0.95rem;
+    }
+
+    .form-group input {
+        width: 100%;
+        display: block;
+        padding: 0.9rem 1.1rem;
+        border: 2px solid #e2e8f0;
+        border-radius: 12px;
+        font-size: 1rem;
+        outline: none;
+        background-color: #f8fafc;
+        transition: all 0.3s ease;
+    }
+
+    .form-group input:focus {
+        border-color: #6cc091;
+        background-color: #ffffff;
+        box-shadow: 0 0 0 4px rgba(108, 192, 145, 0.15);
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 1rem;
+        background-color: #6cc091;
+        color: #ffffff;
+        border: none;
+        border-radius: 12px;
+        font-size: 1.1rem;
+        font-weight: 700;
+        cursor: pointer;
+        margin-top: 1rem;
+        transition: all 0.3s ease;
+    }
+
+    .submit-btn:hover {
+        background-color: #5ab182;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(108, 192, 145, 0.3);
+    }
+
+    .back-link {
+        display: inline-block;
+        margin-top: 1.8rem;
+        color: #718096;
+        text-decoration: none;
+        font-size: 0.95rem;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .back-link:hover {
+        color: #2c3e50;
+    }
+</style>
+    </style>
+</head>
+<body>
+
+    <div class="form-card">
+        <h2>Заявка на навчання</h2>
+        <p>Залиште свої дані, і ми зв'яжемося з вами найближчим часом!</p>
+
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Ваше ім'я</label>
+                <input type="text" id="name" name="name" placeholder="Олександр" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Електронна пошта (Email)</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Номер телефону</label>
+                <input type="tel" id="phone" name="phone" placeholder="+380 (99) 123-45-67" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Надіслати заявку</button>
+        </form>
+
+        <a href="index.html" class="back-link">← Повернутися на головну</a>
+    </div>
+
+</body>
+</html>
